@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ui": "rm -rf disd && cd ../fso-note-demo-frontend && pnpm run build && cp -r dist ../fso-note-demo-backend",
+    "deploy:full": "pnpm run build:ui && git add . && git commit -m 'UI build' && git push"
   },
   "author": "Filip Madunicky",
   "license": "MIT",
