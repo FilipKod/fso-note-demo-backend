@@ -7,7 +7,8 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "build:ui": "rm -rf disd && cd ../fso-note-demo-frontend && pnpm run build && cp -r dist ../fso-note-demo-backend",
-    "deploy:full": "pnpm run build:ui && git add . && git commit -m 'UI build' && git push"
+    "deploy:full": "pnpm run build:ui && git add . && git commit -m 'UI build' && git push",
+    "lint": "eslint ."
   },
   "author": "Filip Madunicky",
   "license": "MIT",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.37.0",
+    "@stylistic/eslint-plugin-js": "^4.4.1",
     "eslint": "^9.37.0",
     "globals": "^16.4.0"
   }
