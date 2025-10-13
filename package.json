@@ -9,7 +9,8 @@
     "build:ui": "rm -rf disd && cd ../fso-note-demo-frontend && pnpm run build && cp -r dist ../fso-note-demo-backend",
     "deploy:full": "pnpm run build:ui && git add . && git commit -m 'UI build' && git push",
     "lint": "eslint .",
-    "test": "NODE_ENV=test node --test"
+    "test": "NODE_ENV=test node --test",
+    "test:only": "NODE_ENV=test node --test --test-only"
   },
   "author": "Filip Madunicky",
   "license": "MIT",
