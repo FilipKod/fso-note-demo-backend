@@ -1,8 +1,9 @@
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InllbGlkcmljIiwiaWQiOiI2OGY5ZTMxYjNjODM2MGY0YmY4ODRkZGYiLCJpYXQiOjE3NjEyOTcyMjB9.wqhzmfRcDHpvMwtbBt2YtnuqpLFAkQHTP2Awr9Quw18
 
 {
-  "content": "Postman is good for testing backend but rest_client vscode is better",
+  "content": "Yelidric create this important note",
   "important": true
 }
 
